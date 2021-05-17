@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
@@ -301,6 +303,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
+  background-position: top center;
 }
 .fh5co-cover .overlay {
   z-index: 0;
@@ -311,13 +314,14 @@ h1, h2, h3, h4, h5, h6, figure {
   right: 0;
   background: rgba(0, 0, 0, 0.5);
 }
-.fh5co-cover > .fh5co-container {
-  position: relative;
-  z-index: 10;
-}
 @media screen and (max-width: 768px) {
   .fh5co-cover {
     height: 600px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fh5co-cover {
+    height: 500px;
   }
 }
 .fh5co-cover .display-t,
@@ -841,18 +845,32 @@ form label {
   line-height: 1.5;
   font-family: "Sacramento", Arial, serif;
 }
+@media screen and (max-width: 1199px) {
+  #fh5co-header .display-tc h1,
+  #fh5co-counter .display-tc h1,
+  .fh5co-cover .display-tc h1 {
+    font-size: 90px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #fh5co-header .display-tc h1,
+  #fh5co-counter .display-tc h1,
+  .fh5co-cover .display-tc h1 {
+    font-size: 80px;
+  }
+}
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 40px;
+    font-size: 60px;
   }
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 30px;
+    font-size: 50px;
   }
 }
 #fh5co-header .display-tc h2,
@@ -862,13 +880,96 @@ form label {
   line-height: 1.5;
   margin-bottom: 30px;
 }
-@media screen and (max-width: 480px) {
-  #fh5co-header .display-tc h2,
-  #fh5co-counter .display-tc h2,
-  .fh5co-cover .display-tc h2 {
-    font-size: 16px;
+/* countdown */
+#fh5co-header .display-tc #content {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 24px;
+  height: 10%;
+  position: relative;
+  text-align: center;
+  /* top: 10%; */
+}
+#fh5co-header .display-tc #content p {
+  color: #e7e0c3;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  padding: 0;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+#fh5co-header .display-tc #content p:last-child {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin: 3em auto;
+  padding: 0;
+  letter-spacing: 0.1rem;
+}
+#fh5co-header .display-tc #content p:last-child > a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease-in;
+}
+#fh5co-header .display-tc #content p:last-child > a:hover {
+  color: #fff;
+}
+#fh5co-header .display-tc #content section {
+  color: #fff;
+  margin: 0 auto;
+  line-height: 24px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+#fh5co-header .display-tc #content section ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+#fh5co-header .display-tc #content section ul li {
+  display: inline-block;
+  margin-right: 2rem;
+  width: 6rem;
+}
+#fh5co-header .display-tc #content section .timenumbers {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin: 0 auto;
+  text-align: center;
+}
+#fh5co-header .display-tc #content section p.timedescription {
+  font-size: 1.2rem;
+  font-variant: small-caps;
+  line-height: 1.5rem;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-header .display-tc #content {
+    height: 17%;
   }
 }
+@media screen and (max-width: 480px) {
+  #fh5co-header .display-tc #content {
+    height: 15%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #fh5co-header .display-tc #content section .timenumbers {
+    font-size: 2.0rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  #fh5co-header .display-tc #content section p.timedescription {
+    font-size: 1rem;
+  }
+}
+/* countdown */
 #fh5co-header .display-tc .btn,
 #fh5co-counter .display-tc .btn,
 .fh5co-cover .display-tc .btn {
@@ -909,6 +1010,12 @@ form label {
     margin-bottom: 50px;
   }
 }
+@media screen and (max-width: 480px) {
+  #fh5co-counter .feature-center {
+    /* margin-bottom: 30px; */
+    top: 30%;
+  }
+}
 #fh5co-counter .icon {
   width: 70px;
   height: 70px;
@@ -925,64 +1032,6 @@ form label {
   display: block;
   text-align: center;
   margin-left: 3px;
-}
-
-.simply-countdown {
-  /* The countdown */
-  margin-bottom: 2em;
-}
-
-.simply-countdown > .simply-section {
-  /* coutndown blocks */
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  background: rgba(241, 78, 149, 0.8);
-  margin: 0 4px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-  position: relative;
-  animation: pulse 1s ease infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.simply-countdown > .simply-section > div {
-  /* countdown block inner div */
-  display: table-cell;
-  vertical-align: middle;
-  height: 100px;
-  width: 100px;
-}
-
-.simply-countdown > .simply-section .simply-amount,
-.simply-countdown > .simply-section .simply-word {
-  display: block;
-  color: white;
-  /* amounts and words */
-}
-
-.simply-countdown > .simply-section .simply-amount {
-  font-size: 30px;
-  /* amounts */
-}
-
-.simply-countdown > .simply-section .simply-word {
-  color: rgba(255, 255, 255, 0.7);
-  text-transform: uppercase;
-  font-size: 12px;
-  /* words */
 }
 
 #fh5co-testimonial,
