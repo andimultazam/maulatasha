@@ -62,6 +62,7 @@ a:hover, a:active, a:focus {
 
 p {
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 h1, h2, h3, h4, h5, h6, figure {
@@ -773,50 +774,6 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-social-icons li a i {
   font-size: 20px;
 }
-
-.fh5co-contact-info ul {
-  padding: 0;
-  margin: 0;
-}
-.fh5co-contact-info ul li {
-  padding: 0 0 0 50px;
-  margin: 0 0 30px 0;
-  list-style: none;
-  position: relative;
-}
-.fh5co-contact-info ul li:before {
-  color: #F14E95;
-  position: absolute;
-  left: 0;
-  top: .05em;
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.fh5co-contact-info ul li.address:before {
-  font-size: 30px;
-  content: "\e9d1";
-}
-.fh5co-contact-info ul li.phone:before {
-  font-size: 23px;
-  content: "\e9f4";
-}
-.fh5co-contact-info ul li.email:before {
-  font-size: 23px;
-  content: "\e9da";
-}
-.fh5co-contact-info ul li.url:before {
-  font-size: 23px;
-  content: "\e9af";
-}
-
 form label {
   font-weight: normal !important;
 }
@@ -880,7 +837,7 @@ form label {
   margin-bottom: 30px;
 }
 /* countdown */
-#fh5co-header .display-tc #content {
+#fh5co-started .container #content {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
@@ -890,7 +847,7 @@ form label {
   text-align: center;
   /* top: 10%; */
 }
-#fh5co-header .display-tc #content p {
+#fh5co-started .container #content p {
   color: #e7e0c3;
   font-family: "Quicksand", sans-serif;
   font-size: 1.5rem;
@@ -899,39 +856,39 @@ form label {
   letter-spacing: 0.5rem;
   text-transform: uppercase;
 }
-#fh5co-header .display-tc #content p:last-child {
+#fh5co-started .container #content p:last-child {
   font-size: 0.75rem;
   font-weight: 700;
   margin: 3em auto;
   padding: 0;
   letter-spacing: 0.1rem;
 }
-#fh5co-header .display-tc #content p:last-child > a {
+#fh5co-started .container #content p:last-child > a {
   text-decoration: none;
   color: inherit;
   transition: all 0.2s ease-in;
 }
-#fh5co-header .display-tc #content p:last-child > a:hover {
+#fh5co-started .container #content p:last-child > a:hover {
   color: #fff;
 }
-#fh5co-header .display-tc #content section {
+#fh5co-started .container #content section {
   color: #fff;
   margin: 0 auto;
   line-height: 24px;
   font-size: 1rem;
   font-weight: 700;
 }
-#fh5co-header .display-tc #content section ul {
+#fh5co-started .container #content section ul {
   list-style-type: none;
   margin-bottom: 0;
   margin-left: 0;
 }
-#fh5co-header .display-tc #content section ul li {
+#fh5co-started .container #content section ul li {
   display: inline-block;
   margin-right: 2rem;
   width: 6rem;
 }
-#fh5co-header .display-tc #content section .timenumbers {
+#fh5co-started .container #content section .timenumbers {
   display: block;
   font-size: 2.5rem;
   font-weight: 400;
@@ -939,7 +896,7 @@ form label {
   margin: 0 auto;
   text-align: center;
 }
-#fh5co-header .display-tc #content section p.timedescription {
+#fh5co-started .container #content section p.timedescription {
   font-size: 1.2rem;
   font-variant: small-caps;
   line-height: 1.5rem;
@@ -949,22 +906,22 @@ form label {
   top: 10px;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-header .display-tc #content {
+  #fh5co-started .container #content {
     height: 17%;
   }
 }
 @media screen and (max-width: 480px) {
-  #fh5co-header .display-tc #content {
+  #fh5co-started .container #content {
     height: 15%;
   }
 }
 @media screen and (max-width: 480px) {
-  #fh5co-header .display-tc #content section .timenumbers {
+  #fh5co-started .container #content section .timenumbers {
     font-size: 2.0rem;
   }
 }
 @media screen and (max-width: 480px) {
-  #fh5co-header .display-tc #content section p.timedescription {
+  #fh5co-started .container #content section p.timedescription {
     font-size: 1rem;
   }
 }
@@ -1132,43 +1089,51 @@ form label {
 @media screen and (max-width: 480px) {
   .couple-half .groom, .couple-half .bride {
     width: 100%;
-    height: 140px;
+    margin-top: 30px;
+    margin-bottom: 15px;
   }
   .couple-half .groom img, .couple-half .bride img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     margin: 0 auto;
   }
 }
-.couple-half .groom {
-  float: left;
-  margin-left: 5px;
-}
-.couple-half .bride {
-  float: right;
-  margin-right: 5px;
-}
-.couple-half .desc-groom {
-  padding-left: 180px;
-  text-align: left;
-}
-.couple-half .desc-bride {
-  padding-right: 180px;
-  text-align: right;
-}
-@media screen and (max-width: 480px) {
-  .couple-half .groom, .couple-half .bride {
-    margin-left: 0;
-    margin-right: 0;
+@media screen and (min-width: 769px) {
+  .couple-half .groom {
+    float: left;
+    margin-left: 5px;
+  }
+  .couple-half .bride {
+    float: right;
+    margin-right: 5px;
   }
   .couple-half .desc-groom {
-    padding-right: 0;
-    text-align: center;
+    padding-left: 180px;
+    text-align: left;
   }
   .couple-half .desc-bride {
-    padding-left: 0;
+    padding-right: 180px;
+    text-align: right;
+  }
+}
+@media screen and (max-width: 480px) {
+  .couple-half .desc-bride, .couple-half .desc-groom {
     text-align: center;
   }
+}
+
+/* testing flexbox */
+#guest-book {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.section {
+  padding: 30px 0;
+  position: relative;
+  min-height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .feature-center {
@@ -1401,6 +1366,34 @@ form label {
   color: #5d5d5d;
   margin-bottom: 10px;
 }
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:80%;
+  position:relative;
+  height:0;
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.nempel {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  bottom: 95px;
+  right: 20px;
+  opacity: 0.7;
+  color: #ecded8;
+  border-radius: 50px;
+  text-align: center;
+  padding-top: 12px;
+  z-index: 99;
+}
 
 #fh5co-started {
   position: relative;
@@ -1545,26 +1538,6 @@ form label {
 #fh5co-offcanvas ul li.offcanvas-has-dropdown > a {
   display: block;
   position: relative;
-}
-#fh5co-offcanvas ul li.offcanvas-has-dropdown > a:after {
-  position: absolute;
-  right: 0px;
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "\e921";
-  font-size: 20px;
-  color: rgba(255, 255, 255, 0.2);
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
 }
 #fh5co-offcanvas ul li.offcanvas-has-dropdown.active a:after {
   -webkit-transform: rotate(-180deg);
