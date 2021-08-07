@@ -299,13 +299,16 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-cover {
-  height: 900px;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: relative;
-  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 .fh5co-cover .overlay {
+  height: 900px;
   z-index: 0;
   position: absolute;
   bottom: 0;
@@ -313,16 +316,6 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.5);
-}
-@media screen and (max-width: 768px) {
-  .fh5co-cover {
-    height: 600px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .fh5co-cover {
-    height: 500px;
-  }
 }
 .fh5co-cover .display-t,
 .fh5co-cover .display-tc {
@@ -333,27 +326,7 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   .fh5co-cover .display-t,
   .fh5co-cover .display-tc {
-    height: 600px;
-  }
-}
-.fh5co-cover.fh5co-cover-sm {
-  height: 600px;
-}
-@media screen and (max-width: 768px) {
-  .fh5co-cover.fh5co-cover-sm {
-    height: 400px;
-  }
-}
-.fh5co-cover.fh5co-cover-sm .display-t,
-.fh5co-cover.fh5co-cover-sm .display-tc {
-  height: 600px;
-  display: table;
-  width: 100%;
-}
-@media screen and (max-width: 768px) {
-  .fh5co-cover.fh5co-cover-sm .display-t,
-  .fh5co-cover.fh5co-cover-sm .display-tc {
-    height: 400px;
+    height: 900px;
   }
 }
 
@@ -1255,27 +1228,6 @@ form label {
   font-weight: 700;
   display: block;
 }
-#fh5co-testimonial .wrap-testimony .testimony-slide span a.twitter {
-  color: #F14E95;
-  font-weight: 300;
-}
-#fh5co-testimonial .wrap-testimony .testimony-slide figure {
-  margin-bottom: 10px;
-  display: -moz-inline-stack;
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-  width: 100px;
-  height: 100px;
-}
-#fh5co-testimonial .wrap-testimony .testimony-slide figure img {
-  width: 100px;
-  height: 100px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-}
 #fh5co-testimonial .wrap-testimony .testimony-slide blockquote {
   border: none;
   margin: 30px auto;
@@ -1313,7 +1265,6 @@ form label {
 #fh5co-testimonial .wrap-testimony .arrow-thumb a:hover, #fh5co-testimonial .wrap-testimony .arrow-thumb a:focus, #fh5co-testimonial .wrap-testimony .arrow-thumb a:active {
   text-decoration: none;
 }
-
 .feature-left {
   float: left;
   width: 100%;
