@@ -335,7 +335,6 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #fh5co-counter,
 #fh5co-event {
-  height: 850px;
   float: left;
 }
 #fh5co-counter .display-t,
@@ -1062,7 +1061,7 @@ form label {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 769px) {
   .couple-half .groom, .couple-half .bride {
     width: 100%;
     margin-top: 30px;
@@ -1072,6 +1071,9 @@ form label {
     width: 150px;
     height: 150px;
     margin: 0 auto;
+  }
+  .couple-half .desc-bride, .couple-half .desc-groom {
+    text-align: center;
   }
 }
 @media screen and (min-width: 769px) {
@@ -1090,11 +1092,6 @@ form label {
   .couple-half .desc-bride {
     padding-right: 180px;
     text-align: right;
-  }
-}
-@media screen and (max-width: 480px) {
-  .couple-half .desc-bride, .couple-half .desc-groom {
-    text-align: center;
   }
 }
 
