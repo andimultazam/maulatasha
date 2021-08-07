@@ -281,7 +281,7 @@
                 
 								jQuery.ajax({
 									type: "POST",
-									url: 'http://localhost:3000/wishes',
+									url: 'https://pacific-spire-32964.herokuapp.com/wishes',
 									data: isi,
 									success: function(newData){
 										jQuery('#btn-submit-wishes').attr('disabled', false);
@@ -299,7 +299,7 @@
 				function getWishesData() {
 					jQuery.ajax({
 						type: "GET",
-						url: 'http://localhost:3000/wishes',
+						url: 'https://pacific-spire-32964.herokuapp.com/wishes',
 						success: function(data){
 							jQuery.each(data, function(index, val) {
 								addWishes(val);
