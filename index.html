@@ -55,7 +55,30 @@
 
 	</head>
 	<body>
-
+	<audio id="myAudio" autoplay loop>
+		<source src="audio/Cant-Help-Falling-In-Love-Cello.mp3">
+	</audio>
+	<a onclick="playAudio()" type="button" id="un-mute" class="nempel" style="display: inline-block;">
+		<img src="audio/mute.png" width="50px">
+	</a>
+	<a onclick="pauseAudio()" type="button" id="mute" class="nempel" style="display: none;">
+		<img src="audio/unmute.png" width="50px;">
+	</a>
+	<script>
+		document.getElementById('un-mute').style.display = 'none';
+		document.getElementById('mute').style.display = 'inline-block';
+		var x = document.getElementById('myAudio');
+		function playAudio() {
+			x.play();
+			document.getElementById('un-mute').style.display = 'none';
+			document.getElementById('mute').style.display = 'inline-block';
+		}
+		function pauseAudio() {
+			x.pause();
+			document.getElementById('mute').style.display = 'none';
+			document.getElementById('un-mute').style.display = 'inline-block';
+		}
+	</script>
 	<header id="fh5co-header" class="fh5co-cover" role="banner" data-stellar-background-ratio="center">
 		<div class="overlay"></div>
 		<div class="container">
@@ -292,31 +315,6 @@
 			</div>
 		</div>
 	</div>
-
-	<audio id="myAudio" autoplay loop>
-		<source src="audio/Cant-Help-Falling-In-Love-Cello.mp3">
-	</audio>
-	<a onclick="playAudio()" type="button" id="un-mute" class="nempel" style="display: inline-block;">
-		<img src="audio/mute.png" width="50px">
-	</a>
-	<a onclick="pauseAudio()" type="button" id="mute" class="nempel" style="display: none;">
-		<img src="audio/unmute.png" width="50px;">
-	</a>
-	<script>
-		document.getElementById('un-mute').style.display = 'none';
-		document.getElementById('mute').style.display = 'inline-block';
-		var x = document.getElementById('myAudio');
-		function playAudio() {
-			x.play();
-			document.getElementById('un-mute').style.display = 'none';
-			document.getElementById('mute').style.display = 'inline-block';
-		}
-		function pauseAudio() {
-			x.pause();
-			document.getElementById('mute').style.display = 'none';
-			document.getElementById('un-mute').style.display = 'inline-block';
-		}
-	</script>
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
 			<div class="row copyright">
