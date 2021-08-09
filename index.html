@@ -237,15 +237,21 @@
 						getWishesData();
 						jQuery('#form-wish').submit(
 							function(event) {
-								var isi = jQuery(this).serialize();
+								// var isi = jQuery(this).serialize();
+								let isi = {
+									id: Date.now(),
+									name: document.getElementById('name').value,
+									wish: document.getElementById('wish').value
+								}
 								/* Act on the event */
 								jQuery('#btn-submit-wishes').attr('disabled', true);
                 
 								jQuery.ajax({
 									type: "POST",
-									url: 'https://pacific-spire-32964.herokuapp.com/wishes',
-									data: isi,
-									success: function(newData){
+									url: 'https://wedding-wishes-6915d-default-rtdb.asia-southeast1.firebasedatabase.app/wishes/0.json',
+									data: JSON.stringify(isi),
+									dataType: "json",
+									success: function(data){
 										jQuery('#btn-submit-wishes').attr('disabled', false);
 										/* iterate through array or object */
 										addWishes(newData);
@@ -261,7 +267,8 @@
 				function getWishesData() {
 					jQuery.ajax({
 						type: "GET",
-						url: 'https://pacific-spire-32964.herokuapp.com/wishes',
+						url: 'https://wedding-wishes-6915d-default-rtdb.asia-southeast1.firebasedatabase.app/wishes/0.json',
+						dataType: "json",
 						success: function(data){
 							jQuery.each(data, function(index, val) {
 								addWishes(val);
