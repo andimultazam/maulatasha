@@ -254,7 +254,7 @@
 									success: function(data){
 										jQuery('#btn-submit-wishes').attr('disabled', false);
 										/* iterate through array or object */
-										addWishes(newData);
+										addWishes(data);
 										$('#form-wish')[0].reset();
 										swiperInit();
 									},
