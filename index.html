@@ -238,23 +238,22 @@
 						jQuery('#form-wish').submit(
 							function(event) {
 								// var isi = jQuery(this).serialize();
-								let isi = {
-									id: Date.now(),
-									name: document.getElementById('name').value,
-									wish: document.getElementById('wish').value
+								var isi = {
+									"id": Date.now(),
+									"name": document.getElementById('name').value,
+									"wish": document.getElementById('wish').value
 								}
 								/* Act on the event */
 								jQuery('#btn-submit-wishes').attr('disabled', true);
-                
 								jQuery.ajax({
 									type: "POST",
 									url: 'https://wedding-wishes-6915d-default-rtdb.asia-southeast1.firebasedatabase.app/wishes/0.json',
 									data: JSON.stringify(isi),
-									dataType: "json",
-									success: function(data){
+									dataType: 'json',
+									success: function(){
 										jQuery('#btn-submit-wishes').attr('disabled', false);
 										/* iterate through array or object */
-										addWishes(data);
+										addWishes(isi);
 										$('#form-wish')[0].reset();
 										swiperInit();
 									},
